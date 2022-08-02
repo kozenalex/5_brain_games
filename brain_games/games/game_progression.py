@@ -17,8 +17,8 @@ def game_progression_logic():
     Q_and_A_list = []
     iteration = 0
     while iteration < 3:
-        first_item = random.randint(1,30)
-        step = random.randint(1,10)
+        first_item = random.randint(1, 30)
+        step = random.randint(1, 10)
         last_item = first_item + step * random.randint(5, 15)
         Q_and_A_list.append(generate_progression(first_item, last_item, step))
         iteration += 1
