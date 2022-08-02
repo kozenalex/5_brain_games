@@ -9,7 +9,7 @@ def game_even_logic():
     Q_and_A_list = []
     print('Answer "yes" if the number is even, otherwise answer "no".')
     while iterations < 3:
-        question_number = random.randint(1, 100)        
+        question_number = random.randint(1, 100)
         if question_number % 2 == 0:
             Q_and_A_list.append((str(question_number), 'yes'))
         else:
