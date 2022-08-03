@@ -19,7 +19,7 @@ def game_calc_logic():
     user_name = welcome_user()
     print('What is the result of the expression?')
     Q_and_A_list = []
-    actions_list = ((add, '+'), (sub, '-'), (mul, '*'))
+    actions_list = ((add, ' + '), (sub, ' - '), (mul, ' * '))
     iteration = 0
     while iteration < 3:
         a = random.randint(0, 30)
