@@ -5,7 +5,7 @@ from brain_games.cli import welcome_user, user_game_interface
 
 def generate_progression(first_item, last_item, iterator):
     progression = list(range(first_item, last_item, iterator))
-    mask_position = random.randint(1, len(progression))
+    mask_position = random.randint(1, len(progression) - 1)
     answer = progression[mask_position]
     progression[mask_position] = '..'
     return (' '.join(map(str, progression)), str(answer))
