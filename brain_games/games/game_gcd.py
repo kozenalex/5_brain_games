@@ -4,6 +4,8 @@ from brain_games.cli import welcome_user, user_game_interface
 
 
 def find_gcd(a, b):
+    if a == 0 or b == 0:
+        return max(a,b)
     gcd = 1
     temp_devisor = 1
     while temp_devisor <= max(a, b) / 2:
