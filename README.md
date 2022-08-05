@@ -25,4 +25,4 @@
     5. brain-prime
 Далее следовать указаниям на экране
 
-<a href="https://asciinema.org/a/H3DaHCrtSomZSIm0rYbSqDLQb" target="_blank"><img src="https://asciinema.org/a/H3DaHCrtSomZSIm0rYbSqDLQb.svg" /></a>
+[![asciicast](https://asciinema.org/a/ydIfV864CBNvPFmL5utSmrGUO.svg)](https://asciinema.org/a/ydIfV864CBNvPFmL5utSmrGUO)
