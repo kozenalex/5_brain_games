@@ -26,3 +26,7 @@
 Далее следовать указаниям на экране
 
 [![asciicast](https://asciinema.org/a/ydIfV864CBNvPFmL5utSmrGUO.svg)](https://asciinema.org/a/ydIfV864CBNvPFmL5utSmrGUO)
+[![asciicast](https://asciinema.org/a/DkQCJu2a1r4k6eRTwGHMLGC33.svg)](https://asciinema.org/a/DkQCJu2a1r4k6eRTwGHMLGC33)
+[![asciicast](https://asciinema.org/a/RX6fZadHKapUzo4LVQyEgWDLX.svg)](https://asciinema.org/a/RX6fZadHKapUzo4LVQyEgWDLX)
+[![asciicast](https://asciinema.org/a/yGyGzi0IbH8ezwWWS4gz6zf1Q.svg)](https://asciinema.org/a/yGyGzi0IbH8ezwWWS4gz6zf1Q)
+[![asciicast](https://asciinema.org/a/3pIcJ7FyUghsQ89pgRPSPq9wl.svg)](https://asciinema.org/a/3pIcJ7FyUghsQ89pgRPSPq9wl)
