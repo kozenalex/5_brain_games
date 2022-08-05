@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 import random
-from brain_games.cli import welcome_user, user_game_interface
+MAX_NUMBER = 100
 
 
 def find_gcd(a, b):
     if a == 0 or b == 0:
         return max(a, b)
+    if a == b:
+        return a
     gcd = 1
     temp_devisor = 1
     while temp_devisor <= max(a, b) / 2:
@@ -16,13 +18,8 @@ def find_gcd(a, b):
 
 
 def game_gcd_logic():
-    user_name = welcome_user()
-    print('Find the greatest common divisor of given numbers.')
-    Q_and_A_list = []
-    iteration = 0
-    while iteration < 3:
-        a = random.randint(0, 100)
-        b = random.randint(0, 100)
-        Q_and_A_list.append((str(a) + ' ' + str(b), str(find_gcd(a, b))))
-        iteration += 1
-    user_game_interface(Q_and_A_list, user_name)
+    num1 = random.randint(1, MAX_NUMBER)
+    num2 = random.randint(1, MAX_NUMBER)
+    question = str(num1) + ' ' + str(num2)
+    answer = str(find_gcd(num1, num2))
+    return (question, answer)

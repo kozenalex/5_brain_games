@@ -1,25 +1,22 @@
 #!/usr/bin/env python3
 import random
-from brain_games.cli import welcome_user, user_game_interface
-
-
-def generate_progression(first_item, last_item, iterator):
-    progression = list(range(first_item, last_item, iterator))
-    mask_position = random.randint(1, len(progression) - 1)
-    answer = progression[mask_position]
-    progression[mask_position] = '..'
-    return (' '.join(map(str, progression)), str(answer))
+MAX_START = 30
+MAX_STEP = 10
 
 
 def game_progression_logic():
-    user_name = welcome_user()
-    print('What number is missing in the progression?')
-    Q_and_A_list = []
+    first_item = random.randint(1, MAX_START)
+    step = random.randint(1, MAX_STEP)
+    steps = random.randint(5, 15)
+    mask_unit = random.randint(1, steps - 1)
     iteration = 0
-    while iteration < 3:
-        first_item = random.randint(1, 30)
-        step = random.randint(1, 10)
-        last_item = first_item + step * random.randint(5, 15)
-        Q_and_A_list.append(generate_progression(first_item, last_item, step))
+    question = str(first_item) + ' '
+    while iteration < steps:
+        first_item = first_item + step
+        if (iteration != mask_unit):
+            question = question + str(first_item) + ' '
+        else:
+            answer = str(first_item)
+            question = question + '.. '
         iteration += 1
-    user_game_interface(Q_and_A_list, user_name)
+    return (question, answer)

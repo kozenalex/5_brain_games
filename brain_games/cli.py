@@ -1,4 +1,6 @@
 import prompt
+WRNG_ANS_STR = ' is wrong answer ;(. Correct answer was '
+GOOD_ANS_STR = 'Correct!'
 
 
 def welcome_user():
@@ -8,14 +10,18 @@ def welcome_user():
     return name
 
 
-def user_game_interface(Q_and_A_list, user_name):
-    for q in Q_and_A_list:
-        print('Question: ' + q[0])
-        res = prompt.string('Your answer: ')
-        if res == q[1]:
-            print('Correct!')
+def user_game_interface(game_func, greet):
+    user_name = welcome_user()
+    print(greet)
+    game_step = 0
+    while game_step < 3:
+        Q_and_A = game_func()
+        print('Question: ' + Q_and_A[0])
+        answer = prompt.string('Your answer: ')
+        if answer == Q_and_A[1]:
+            game_step += 1
+            print(GOOD_ANS_STR)
         else:
-            print(res + ' is wrong answer ;(. Correct answer was ' + q[1] + '.')
-            print('Let\'s try again, ' + user_name + '!')
+            print(answer + WRNG_ANS_STR + Q_and_A[1] + '.')
             return
     print('Congratulations, ' + user_name + '!')
