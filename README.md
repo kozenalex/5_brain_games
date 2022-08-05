@@ -24,3 +24,5 @@
     4. brain-progression
     5. brain-prime
 Далее следовать указаниям на экране
+
+<script id="asciicast-H3DaHCrtSomZSIm0rYbSqDLQb" src="https://asciinema.org/a/H3DaHCrtSomZSIm0rYbSqDLQb.js" async></script>
