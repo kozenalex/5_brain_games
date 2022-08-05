@@ -23,6 +23,6 @@ def user_game_interface(game_func, greet):
             print(GOOD_ANS_STR)
         else:
             print(answer + WRNG_ANS_STR + Q_and_A[1] + '.')
-            print('Let\'s try again, ' + user_name)
+            print('Let\'s try again, ' + user_name + '!')
             return
     print('Congratulations, ' + user_name + '!')
