@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import random
 MAX_NUMBER = 100
 
@@ -17,7 +16,7 @@ def find_gcd(a, b):
     return gcd
 
 
-def game_gcd_logic():
+def gen_game_gcd_que_and_answ():
     num1 = random.randint(1, MAX_NUMBER)
     num2 = random.randint(1, MAX_NUMBER)
     question = str(num1) + ' ' + str(num2)

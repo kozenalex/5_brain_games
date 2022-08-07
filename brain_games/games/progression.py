@@ -1,10 +1,9 @@
-#!/usr/bin/env python3
 import random
 MAX_START = 30
 MAX_STEP = 10
 
 
-def game_progression_logic():
+def gen_game_progression_que_and_answ():
     first_item = random.randint(1, MAX_START)
     step = random.randint(1, MAX_STEP)
     steps = random.randint(5, 15)
