@@ -3,19 +3,18 @@ MAX_START = 30
 MAX_STEP = 10
 
 
-def gen_game_progression_que_and_answ():
+def gen_progression():
     first_item = random.randint(1, MAX_START)
     step = random.randint(1, MAX_STEP)
-    steps = random.randint(5, 15)
-    mask_unit = random.randint(1, steps - 1)
-    iteration = 0
-    question = str(first_item) + ' '
-    while iteration < steps:
-        first_item = first_item + step
-        if (iteration != mask_unit):
-            question = question + str(first_item) + ' '
-        else:
-            answer = str(first_item)
-            question = question + '.. '
-        iteration += 1
+    last_item = step * random.randint(5, 15)
+    res = list(range(first_item, last_item, step))
+    return res
+
+
+def gen_game_progression_que_and_answ():
+    unmasked_str = gen_progression()
+    mask_unit = random.randint(1, len(unmasked_str) - 1)
+    answer = str(unmasked_str[mask_unit])
+    unmasked_str[mask_unit] = '..'
+    question = ' '.join(map(str, unmasked_str))
     return (question, answer)
