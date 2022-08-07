@@ -6,7 +6,7 @@ MAX_STEP = 10
 def gen_progression():
     first_item = random.randint(1, MAX_START)
     step = random.randint(1, MAX_STEP)
-    last_item = step * random.randint(5, 15)
+    last_item = first_item + step * random.randint(5, 15)
     res = list(range(first_item, last_item, step))
     return res
 
