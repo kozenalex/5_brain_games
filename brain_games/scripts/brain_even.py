@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.games.even import gen_game_even_que_and_answ
-from brain_games.engine import user_game_interface
-GREETING = 'Answer "yes" if the number is even, otherwise answer "no".'
+import brain_games.games.even
+from brain_games.engine import start
 
 
 def main():
-    user_game_interface(gen_game_even_que_and_answ, GREETING)
+    start(brain_games.games.even)
 
 
 if __name__ == '__main__':

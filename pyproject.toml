@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.1.1"
+version = "0.1.4"
 description = "This project provides a bunch of logical and math games"
 authors = ["Aleksey Kosin <akosin@udm.ru>"]
 repository = "https://github.com/kozenalex/python-project-lvl1"

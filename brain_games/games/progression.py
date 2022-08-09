@@ -1,6 +1,7 @@
 import random
 MAX_START = 30
 MAX_STEP = 10
+DESCRIPTION = 'What number is missing in the progression?'
 
 
 def gen_progression():
@@ -11,7 +12,7 @@ def gen_progression():
     return res
 
 
-def gen_game_progression_que_and_answ():
+def generate_round():
     unmasked_str = gen_progression()
     mask_unit = random.randint(1, len(unmasked_str) - 1)
     answer = str(unmasked_str[mask_unit])

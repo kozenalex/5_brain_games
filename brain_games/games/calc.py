@@ -1,8 +1,9 @@
 import random
 MAX_NUMBER = 30
+DESCRIPTION = 'What is the result of the expression?'
 
 
-def gen_game_calc_que_and_answ():
+def generate_round():
     num1 = random.randint(1, MAX_NUMBER)
     num2 = random.randint(1, MAX_NUMBER)
     sign = random.randint(0, 2)

@@ -1,5 +1,6 @@
 import random
 MAX_NUMBER = 100
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(n):
@@ -12,7 +13,7 @@ def is_prime(n):
     return True
 
 
-def gen_game_prime_que_and_answ():
+def generate_round():
     num = random.randint(1, MAX_NUMBER)
     question = str(num)
     if is_prime(num):

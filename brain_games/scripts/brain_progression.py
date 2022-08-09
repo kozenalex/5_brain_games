@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.games.progression import gen_game_progression_que_and_answ
-from brain_games.engine import user_game_interface
-GREETING = 'What number is missing in the progression?'
+import brain_games.games.progression
+from brain_games.engine import start
 
 
 def main():
-    user_game_interface(gen_game_progression_que_and_answ, GREETING)
+    start(brain_games.games.progression)
 
 
 if __name__ == '__main__':
